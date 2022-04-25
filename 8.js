@@ -20,7 +20,7 @@ paragraph.forEach((element) => element.style.color = "#ff0000");
 
 
 
-// Вариант решения добавлением класса:
+// Вариант решения добавлением класса ,в кором прописаны необходимые css-свойства( в данном случае "red"):
 
 //paragraph.forEach((element) =>element.classList.add("red"));
 
