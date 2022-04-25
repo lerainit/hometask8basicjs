@@ -72,9 +72,9 @@ console.log(newParagraph);
 // 5.Получить элементы <li>, вложенные в элемент с классом main-header и вывеcти их в консоль. Каждому из элементов присвоить новый класс nav-item. 
 
 let mainHeaderList = document.querySelectorAll('.main-header li');
-mainHeaderList.forEach(child => {
-  child.classList.add("nav-item")
-   console.log(child);
+mainHeaderList.forEach(item => {
+  item.classList.add("nav-item")
+   console.log(item);
 })
 
 
