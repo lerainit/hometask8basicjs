@@ -63,7 +63,7 @@ console.log(list.innerText);
 ## Как обратиться к элементу на странице:
 
 
-### document.getElementBy
+### element.getElementBy
 
 - document.getElementById или просто id
 Если у элемента есть атрибут id, то мы можем получить его вызовом document.getElementById(id)
