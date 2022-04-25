@@ -2,7 +2,9 @@
 
 
 
-// 1.
+// 1.Найти все параграфы на странице и установить цвет фона #ff0000:
+
+
 let paragraph = document.querySelectorAll("p");;
 
 console.log(paragraph);
@@ -27,7 +29,8 @@ paragraph.forEach((element) => element.style.color = "#ff0000");
 
 
 
-// 2.
+// 2.Найти элемент с id="optionsList". Вывести в консоль.Найти родительский элемент и вывести в консоль.
+
 
 let optionList = document.getElementById("optionsList");
 
@@ -41,7 +44,8 @@ let parentOption = optionList.parentElement;
 console.log(parentOption);
 
 
-// 3.
+// 3.Найти дочерние ноды, если они есть, и вывести в консоль названия и тип нод:
+
 
 let childrenOfOption = optionList.childNodes;
 
@@ -55,7 +59,8 @@ for (let node of childrenOfOption) {
 
 childrenOfOption.forEach((node) => console.log(node))
 
-// 4.
+// 4.Установите в качестве контента элемента с классом testParagraph следующий параграф <p>This is a paragraph</p>:
+
 
 let newParagraph = document.getElementById('testParagraph');
 
@@ -67,24 +72,13 @@ newParagraph.innerHTML = "This is a paragraph";
 console.log(newParagraph);
 
 
-// 5.
+// 5.Получить элементы <li>, вложенные в элемент с классом main-header и вывеcти их в консоль. Каждому из элементов присвоить новый класс nav-item. 
 
-let headerMain = document.querySelector('.main-header');
-
-console.log(headerMain);
-
-
-let headerChildren = headerMain.children;
-
-
-for (let child of headerChildren) {
-
-  child.classList.add("nav-item");
-
-  console.log(child);
-
-}
-
+let mainHeaderList = document.querySelectorAll('.main-header li');
+mainHeaderList.forEach(child => {
+  child.classList.add("nav-item")
+   console.log(child);
+})
 
 
 // 6.
