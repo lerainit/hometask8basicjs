@@ -21,21 +21,21 @@ paragraph.forEach((element) => element.style.color = "#ff0000");
 
 // 2.
 
-let option = document.getElementById("optionsList");
+let optionList = document.getElementById("optionsList");
 
 
-console.log(option);
+console.log(optionList);
 
 
 
-let parentOption = option.parentElement;
+let parentOption = optionList.parentElement;
 
 console.log(parentOption);
 
 
 // 3.
 
-let childrenOfOption = option.childNodes;
+let childrenOfOption = optionList.childNodes;
 
 
 for (let node of childrenOfOption) {
@@ -59,12 +59,12 @@ console.log(newParagraph);
 
 // 5.
 
-let header = document.querySelector('.main-header');
+let headerMain = document.querySelector('.main-header');
 
-console.log(header);
+console.log(headerMain);
 
 
-let headerChildren = header.children;
+let headerChildren = headerMain.children;
 
 
 for (let child of headerChildren) {
@@ -79,17 +79,17 @@ for (let child of headerChildren) {
 
 // 6.
 
-let title = document.querySelectorAll('section h3,h2,h4')
+let sectionTitle = document.querySelectorAll('section h3,h2,h4')
 
 
-title.forEach(item => {
+sectionTitle.forEach(item => {
   item.classList.add("section-title")
   console.log(item);
 
 
 });
 
-title.forEach(item => {
+sectionTitle.forEach(item => {
   item.classList.remove("section-title")
   console.log(item);
 
