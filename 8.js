@@ -66,7 +66,7 @@ let newParagraph = document.getElementById('testParagraph');
 
 
 
-newParagraph.innerHTML = "This is a paragraph";
+newParagraph.innerHTML = "<p>This is a paragraph</p>";
 
 
 console.log(newParagraph);
