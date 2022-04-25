@@ -7,13 +7,21 @@ let paragraph = document.querySelectorAll("p");;
 
 console.log(paragraph);
 
+// Вариант решения циклом for ... of:
+
+/*for(const element of paragraph){
+
+element.style.color =  "#ff0000";}*/
 
 
-//for(const element of paragraph){
 
-//element.style.color =  "#ff0000";}
+// Вариант решение forEach:
 
 paragraph.forEach((element) => element.style.color = "#ff0000");
+
+
+
+// Вариант решения добавлением класса:
 
 //paragraph.forEach((element) =>element.classList.add("red"));
 
@@ -37,6 +45,8 @@ console.log(parentOption);
 
 let childrenOfOption = optionList.childNodes;
 
+
+// Вариант решения циклом for ... of:
 
 for (let node of childrenOfOption) {
   console.log(node);
