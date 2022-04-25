@@ -81,7 +81,7 @@ mainHeaderList.forEach(child => {
 })
 
 
-// 6.
+// 6.Найти все элементы с классом section-title. Удалить этот класс у элементов.  
 
 let sectionTitle = document.querySelectorAll('section h3,h2,h4')
 
