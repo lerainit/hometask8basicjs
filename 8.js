@@ -1,7 +1,5 @@
 "use strict";
 
-
-
 // 1.Найти все параграфы на странице и установить цвет фона #ff0000:
 
 
@@ -14,7 +12,6 @@ console.log(paragraph);
 /*for(const element of paragraph){
 
 element.style.color =  "#ff0000";}*/
-
 
 
 // Вариант решение forEach:
