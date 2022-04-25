@@ -65,11 +65,19 @@ console.log(list.innerText);
 
 ### document.getElementBy
 
+- document.getElementById или просто id
+Если у элемента есть атрибут id, то мы можем получить его вызовом document.getElementById(id)
 
+- elem.getElementsByTagName(tag):поиск элемента по тегу
 
+- elem.getElementsByСlassName(class):поиск элемента по названию класса
 
+- document.getElementsByName(name):поиск элемента по атрибуту name
 
+Все методы "getElementsBy*" возвращают живую коллекцию. Такие коллекции всегда отражают текущее состояние документа и автоматически обновляются при его изменении.
 
+### querySelectorAll
+Самый универсальный метод поиска ,возвращает все элементы внутри elem, удовлетворяющие данному CSS-селектору.
 
 
 
