@@ -3,7 +3,7 @@
 // 1.Найти все параграфы на странице и установить цвет фона #ff0000:
 
 
-const paragraph = document.querySelectorAll("p");;
+const Paragraph = document.querySelectorAll("p");;
 
 console.log(Paragraph);
 
