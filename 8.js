@@ -63,7 +63,7 @@ const newParagraph = document.getElementById('testParagraph');
 
 
 
-newParagraph.innerHTML = "<p>This is a paragraph</p>";
+newParagraph.innerHTML = "This is a paragraph ";
 
 
 console.log(newParagraph);
