@@ -43,7 +43,7 @@
 
 ```js
 
-let list = document.querySelector('.products-list');
+const list = document.querySelector('.products-list');
 
 console.log(list.innerHTML);
 
@@ -95,15 +95,15 @@ console.log(list.innerText);
    ```
 ```js
 
-let list = document.getElementById("products-list");
+const List = document.getElementById("products-list");
 
-console.log(list);
+console.log(List);
 
 
 // в консоль будет выведен весь элемент с вложенными в него узлами
 
 
-let listByTag = document.getElementByTagName("ul");
+const listByTag = document.getElementByTagName("ul");
 
 console.log(listByTag);
 
@@ -144,13 +144,13 @@ console.log(listByTag);
    ```
   ```js
    
-   let listItem = document.querySelectorAll( 'li');
+   const listItem = document.querySelectorAll( 'li');
    
    console.log(listItem); 
    
    // В консоль будет выведен нодлист всех элементов с тегом 'li'
    
-   let item = document.querySelector('li');
+   const item = document.querySelector('li');
    
    console.log(item);
    
