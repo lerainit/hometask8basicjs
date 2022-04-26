@@ -74,6 +74,8 @@ console.log(sectionTitle);
 
 sectionTitle.forEach(item => item.classList.add("section-title"));
 
+console.log(sectionTitle);
+
 sectionTitle.forEach(item => item.classList.remove("section-title"));
 
 
