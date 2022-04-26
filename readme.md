@@ -142,7 +142,7 @@ console.log(listByTag);
 </html>
 
    ```
-   ```js
+  ```js
    
    let listItem = document.querySelectorAll( 'li');
    
