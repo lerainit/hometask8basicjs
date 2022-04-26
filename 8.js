@@ -47,6 +47,9 @@ console.log(parentOption);
 const childrenOfOption = optionList.childNodes;
 
 
+console.log(childrenOfOption);
+
+
 // Вариант решения циклом for ... of:
 
 for (let node of childrenOfOption) {
