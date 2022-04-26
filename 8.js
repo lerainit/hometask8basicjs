@@ -34,8 +34,6 @@ const optionList = document.getElementById("optionsList");
 
 console.log(optionList);
 
-
-
 const parentOption = optionList.parentElement;
 
 console.log(parentOption);
@@ -46,28 +44,15 @@ console.log(parentOption);
 
 const childrenOfOption = optionList.childNodes;
 
-
 console.log(childrenOfOption);
 
-
-// Вариант решения циклом for ... of:
-
-for (let node of childrenOfOption) {
-  console.log(node);
-
-}
-
-childrenOfOption.forEach((node) => console.log(node))
 
 // 4.Установите в качестве контента элемента с классом testParagraph следующий параграф <p>This is a paragraph</p>:
 
 
 const newParagraph = document.getElementById('testParagraph');
 
-
-
 newParagraph.innerHTML = "This is a paragraph ";
-
 
 console.log(newParagraph);
 
@@ -75,30 +60,21 @@ console.log(newParagraph);
 // 5.Получить элементы <li>, вложенные в элемент с классом main-header и вывеcти их в консоль. Каждому из элементов присвоить новый класс nav-item. 
 
 const mainHeaderList = document.querySelectorAll('.main-header li');
-mainHeaderList.forEach(item => {
-  item.classList.add("nav-item")
-   console.log(item);
-})
+
+console.log(mainHeaderList);
+
+mainHeaderList.forEach(item => item.classList.add("nav-item"));
 
 
 // 6.Найти все элементы с классом section-title. Удалить этот класс у элементов.  
 
-const sectionTitle = document.querySelectorAll('section h3,h2,h4')
+const sectionTitle = document.querySelectorAll('section h3,h2,h4');
 
-console.log(sectionTitle)
+console.log(sectionTitle);
 
-sectionTitle.forEach(item => {
-  item.classList.add("section-title")
-  console.log(item);
+sectionTitle.forEach(item => item.classList.add("section-title"));
 
-
-});
-
-sectionTitle.forEach(item => {
-  item.classList.remove("section-title")
-  console.log(item);
-
-});
+sectionTitle.forEach(item => item.classList.remove("section-title"));
 
 
 
