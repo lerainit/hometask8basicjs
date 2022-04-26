@@ -16,8 +16,8 @@ element.style.color =  "#ff0000";}*/
 
 // Вариант решение forEach:
 
-Paragraph.forEach((element) => element.style.color = "#ff0000");
 
+Paragraph.forEach((element) => element.style.color = "#ff0000");
 
 
 // Вариант решения добавлением класса ,в кором прописаны необходимые css-свойства( в данном случае "red"),прописав свойства в css-файле:
@@ -69,8 +69,6 @@ mainHeaderList.forEach(item => item.classList.add("nav-item"));
 // 6.Найти все элементы с классом section-title. Удалить этот класс у элементов.  
 
 const sectionTitle = document.querySelectorAll('section h3,h2,h4');
-
-console.log(sectionTitle);
 
 sectionTitle.forEach(item => item.classList.add("section-title"));
 
