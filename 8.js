@@ -82,6 +82,7 @@ mainHeaderList.forEach(item => {
 
 const sectionTitle = document.querySelectorAll('section h3,h2,h4')
 
+console.log(sectionTitle)
 
 sectionTitle.forEach(item => {
   item.classList.add("section-title")
