@@ -3,40 +3,40 @@
 // 1.Найти все параграфы на странице и установить цвет фона #ff0000:
 
 
-let paragraph = document.querySelectorAll("p");;
+const paragraph = document.querySelectorAll("p");;
 
-console.log(paragraph);
+console.log(Paragraph);
 
 // Вариант решения циклом for ... of:
 
-/*for(const element of paragraph){
+/*for(const element of Paragraph){
 
 element.style.color =  "#ff0000";}*/
 
 
 // Вариант решение forEach:
 
-paragraph.forEach((element) => element.style.color = "#ff0000");
+Paragraph.forEach((element) => element.style.color = "#ff0000");
 
 
 
 // Вариант решения добавлением класса ,в кором прописаны необходимые css-свойства( в данном случае "red"),прописав свойства в css-файле:
 
-//paragraph.forEach((element) =>element.classList.add("red"));
+//Paragraph.forEach((element) =>element.classList.add("red"));
 
 
 
 // 2.Найти элемент с id="optionsList". Вывести в консоль.Найти родительский элемент и вывести в консоль.
 
 
-let optionList = document.getElementById("optionsList");
+const optionList = document.getElementById("optionsList");
 
 
 console.log(optionList);
 
 
 
-let parentOption = optionList.parentElement;
+const parentOption = optionList.parentElement;
 
 console.log(parentOption);
 
@@ -44,7 +44,7 @@ console.log(parentOption);
 // 3.Найти дочерние ноды, если они есть, и вывести в консоль названия и тип нод:
 
 
-let childrenOfOption = optionList.childNodes;
+const childrenOfOption = optionList.childNodes;
 
 
 // Вариант решения циклом for ... of:
@@ -59,7 +59,7 @@ childrenOfOption.forEach((node) => console.log(node))
 // 4.Установите в качестве контента элемента с классом testParagraph следующий параграф <p>This is a paragraph</p>:
 
 
-let newParagraph = document.getElementById('testParagraph');
+const newParagraph = document.getElementById('testParagraph');
 
 
 
@@ -71,7 +71,7 @@ console.log(newParagraph);
 
 // 5.Получить элементы <li>, вложенные в элемент с классом main-header и вывеcти их в консоль. Каждому из элементов присвоить новый класс nav-item. 
 
-let mainHeaderList = document.querySelectorAll('.main-header li');
+const mainHeaderList = document.querySelectorAll('.main-header li');
 mainHeaderList.forEach(item => {
   item.classList.add("nav-item")
    console.log(item);
@@ -80,7 +80,7 @@ mainHeaderList.forEach(item => {
 
 // 6.Найти все элементы с классом section-title. Удалить этот класс у элементов.  
 
-let sectionTitle = document.querySelectorAll('section h3,h2,h4')
+const sectionTitle = document.querySelectorAll('section h3,h2,h4')
 
 
 sectionTitle.forEach(item => {
